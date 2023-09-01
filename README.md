@@ -27,7 +27,7 @@ sigma = np.array([.26, .25, .25, .35, .35, .79, .79, .72, .72, .62,.62, 1.07, 1.
 sigma = np.array([.26, .25, .25, .35, .35, .79, .79, .72, .72, .62,.62, 1.07, 1.07, .87, .87, .89, .8, .8, .8, .89, .89, .89, .89, .89, .89])/10.0
 ```
 
-If you use your original dataset, you have to prepare your `sigma`.
+If you use your custom dataset, you have to prepare your `sigma`.
 
 ### `area`: Area of the Object
 
