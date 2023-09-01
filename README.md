@@ -33,4 +33,4 @@ If you use your original dataset, you have to prepare your `sigma`.
 
 `area` is the mean of the number of pixels of the object (such as person) in the picture.
 
-Sometimes it should be the mean of "area" in your COCO annotation.
+Sometimes it may be the mean of "area" in your COCO annotation.
