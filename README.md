@@ -34,3 +34,18 @@ If you use your custom dataset, you have to prepare your `sigma`.
 `area` is the number of pixels of the object (such as person) in the picture.
 
 For sake of simplicity, you can use the mean of "area" in your COCO annotation.
+
+## How to Use
+
+You can caluclate the value of OKS between `kpts1` and `kpts2` like below:
+
+```python
+# This is the sample for COCO keypoints.
+sigma = np.array([.26, .25, .25, .35, .35, .79, .79, .72, .72, .62,.62, 1.07, 1.07, .87, .87, .89, .89])/10.0
+
+
+```
+
+## Calculate `sigma` for Your Custom Dataset
+
+You can get your `sigma` from your custom dataset which is annotated redundantly, or caluclate pseudo `sigma` using the diffelence between ground truth and detected keypoints (code is coming soon!).
