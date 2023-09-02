@@ -12,7 +12,7 @@ To caluculate OKS, you need four arguments; `kpts1`, `kpts2`, `sigma`, and `area
 
 The `OKS` function caluclates the value of OKS between `kpts1` and `kpts2`.
 
-`kpts1` and `kpts2` must be same shape and each keypoint must have three patameters; x, y, and v (v is a visibility).
+`kpts1` and `kpts2` must be same shape and each keypoint must have three parameters; x, y, and v (v is a visibility).
 
 ### `sigma`: Per-Keypoint Standard Deviation
 
@@ -31,6 +31,6 @@ If you use your custom dataset, you have to prepare your `sigma`.
 
 ### `area`: Area of the Object
 
-`area` is the mean of the number of pixels of the object (such as person) in the picture.
+`area` is the number of pixels of the object (such as person) in the picture.
 
-Sometimes it may be the mean of "area" in your COCO annotation.
+For sake of simplicity, you can use the mean of "area" in your COCO annotation.
