@@ -12,7 +12,7 @@ license = { file = "LICENSE" }
 authors = [{ name = "Yutsuro" }]
 keywords = ["OKS", "keypoints", "pose estimation", "COCO"]
 dependencies = [
-  "numpy>=1.25.2,<2.0",
+  "numpy>=2.0",
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -41,5 +41,4 @@ dev = [
   "pytest-cov>=6",
   "ruff>=0.12",
   "mypy>=1.17",
-  "numpy>=1.25.2,<2.0",
 ]
