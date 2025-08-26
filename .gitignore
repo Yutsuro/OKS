@@ -163,5 +163,8 @@ cython_debug/
 test.py
 testconfig.yaml
 
+# Linter
+.ruff_cache/
+
 # VSCode
 .history

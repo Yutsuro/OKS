@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oks"
+version = "0.1.0"
+description = "Calculate OKS (Object Keypoint Similarity) between sets of keypoints"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Yutsuro" }]
+keywords = ["OKS", "keypoints", "pose estimation", "COCO"]
+dependencies = [
+  "numpy>=1.25.2,<2.0",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+
+[project.urls]
+Homepage = "https://github.com/Yutsuro/oks"
+Repository = "https://github.com/Yutsuro/oks"
+Issues = "https://github.com/Yutsuro/oks/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+  "pytest-cov>=6",
+  "ruff>=0.12",
+  "mypy>=1.17",
+  "numpy>=1.25.2,<2.0",
+]
